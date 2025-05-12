@@ -26,7 +26,7 @@ def load_data():
     
     # Load original data with timestamps
     try:
-        og_data = pd.read_csv("https://www.dropbox.com/scl/fi/riy1bbx5184n905ddbwkn/Amazon_Grocery_Data_02_16.csv?rlkey=sq6n0ktf9f0bqtvi3qmswfvxv&st=hxje4m5o&dl=1")
+        og_data = pd.read_csv("https://www.dropbox.com/scl/fi/riy1bbx5184n905ddbwkn/Amazon_Grocery_Data_02_16.csv?rlkey=sq6n0ktf9f0bqtvi3qmswfvxv&st=hxje4m5o&dl=1", low_memory=False)
     except:
         og_data = pd.read_csv('https://www.dropbox.com/scl/fi/riy1bbx5184n905ddbwkn/Amazon_Grocery_Data_02_16.csv?rlkey=sq6n0ktf9f0bqtvi3qmswfvxv&st=hxje4m5o&dl=1')
     
